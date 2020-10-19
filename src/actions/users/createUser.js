@@ -10,7 +10,7 @@ const createUser = async(reqbody,models) =>{
 
     if(JSON.stringify(Object.keys(acceptedParam))==JSON.stringify(Object.keys(reqbody))){
         console.log(`${Object.keys(acceptedParam)} and ${Object.keys(reqbody)} are equal`)
-    }else{console.log("not equal")}
+    }else{console.log("Are not equal")}
 
     var user = await models.user.create({
         firstname: reqbody.firstname,
